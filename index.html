@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustSpirit.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share+Tech&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="splash">
+        <div class="cover"></div>
+        <p class="fade-in">JustSpirit.dev</p>
+    </div>
+    <div class="warning"><strong>Sorry, but the website really isn't optomised for small devices quite yet. I reccomend at least turning your device to landscape until I fix the issue. Either way, I'm sorry for how bad the formatting will likely be.</strong></div>
+    <h1>JustSpirit.dev</h1>
+    <div class="about">
+        <p>Hey, I'm Jack, and this is my website (although that's pretty obvious). I'm currently a <strong>Game Design and Development</strong> student based in <strong>Newcastle</strong>, with the intention of studying <strong>Games Programming</strong> at <strong>Teeside University.</strong></p>
+        <br>
+        <p>Games in general have been a longtime love of mine, but while I <em>do</em> love the creative side (bar anything artistic; I just don't have the eye for it), coding has been my true calling for as long as I can remember. I've spent time learning web languages such as <strong>HTML</strong> and <strong>CSS</strong>, while my latter school years were dedicated to <strong>Python</strong>. I'm currently in the process of teaching myself <strong>C++</strong> in order to move away from Unreal Engine's <strong>Blueprints</strong> (no matter how satisfying they are to look at when done neatly).</p>
+        <br>
+        <p>Other than games, I like reading manga and watching the occasional anime. I <em>do</em> like going for walks, even if I don't go on them as often as I should. I watch far too much YouTube that I often struggle to find anything to watch on it now. And depending on how I'm feeling, I sometimes stream, and people laugh at me for dying in Elden Ring.</p>
+        <br>
+        <p>This website serves as a place for many things: a review board for the latest games I've played or media I've watched; a place I can post a blog when I actually do something interesting for once (trust me, it's happening more often!); but most importantly, a place for my portfolio, where I can show off all the work I am proud of completing, or at least starting on, either solo or with friends.</p>
+        <br>
+        <p>I host basically everything I do over on <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit">GitHub</a>, and if you ever want to reach out to me, you can do so through <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jackcpetty/">LinkedIn</a>. </p>
+    </div>
+    <div class="pageSelect">
+        <button type="button" class="blog" title="Sorry, the blog page isn't ready yet." disabled>Blogs</button>
+        <hr>
+        <button type="button" class="reviews" title="Sorry, the reviews page isn't ready yet."disabled>Reviews</button>
+    </div>
+    <br>
+    <div class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="folioSelect">
+            <button type="button" onclick="folioAll()" class="all" id="all">All Work</button>
+            <button type="button" onclick="folioProg()" class="prog" id="prog">Programming</button>
+            <button type="button" onclick="folioDes()" class="des" id="des">Design</button>
+            <button type="button" onclick="folioProd()" class="prod" id="prod">Production</button>
+        </div>
+        <div class="folioPiece" id="Babel">
+            <img src="Assets/BABELTHUMB.png" alt="Image of Babel concept art by Ellie" class="pieceImg">
+            <h3 class="pieceTitle">BABEL - Game Off 2023</h3>
+            <h3 class="pieceCata">
+                <i class="bi bi-code-slash" title="I did programming on this project"></i>
+                <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
+                <i class="bi bi-gear-fill" title="I did production on this project"></i>
+            </h3>
+            <div class="pieceText">BABEL is my team's submission for GitHub's <strong>Game Off 2023</strong> game jam. As the game jam isn't actually over yet, check back at the start of December to see how we did. In the mean time, I've linked all the files below, so have a browse. My team consists of me, <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-luke-robinson-8b655928b/">Shane</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ellie-jane-gregory-581583289/">Ellie</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sam-clark-72b803288/">Sam</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thomas-cross-589527288/">Thomas</a>. If you want to see what we are each doing in the project, take a peek at the Trello board or raw files linked below.<br><br>Also, as we don't have a key visual, the image is early concept art of the main character by Ellie.</div>
+            <div class="pieceLinks">
+                <a target="_blank" rel="noopener noreferrer" href="https://trello.com/b/q3jHQHvK"><i class="bi bi-trello" title="Trello"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit/BABEL_GO23"><i class="bi bi-github" title="GitHub"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1Ycmich_Y4fz3pAO610Mm8YtiBewLfvJa"><i class="bi bi-archive-fill" title="Files"></i></a>
+            </div>
+            <p class="pieceDates">Nov 1st 2023 > Present</p>
+            <hr class="pieceDivide" style="width: 50vw;">
+        </div>
+        <div class="folioPiece" id="JS.dev">
+            <img src="Assets/JustSpirit.devTHUMB.png" alt="Image of this website's splashscreen" class="pieceImg">
+            <h3 class="pieceTitle">JustSpirit.dev</h3>
+            <div class="pieceText">JustSpirit.dev is the very website you are reading this on. I always wanted to do a website portfolio/cv instead of some <em>boring</em> pdf. However, as I went through all the work of setting up this website (including squashing some annoying and confusing bugs), I don't plan to limit myself to a portfolio. I plan on using this site for anything I want, and currently that culminates in blogs and reviews. However, I'm also in the middle of a game jam, so that takes priority.</div>
+            <h3 class="pieceCata">
+                <i class="bi bi-code-slash" title="I did programming on this project"></i>
+                <i class="bi bi-file-earmark-text-fill" style="opacity: 25%;"></i>
+                <i class="bi bi-gear-fill" style="opacity: 25%;"></i>
+            </h3>
+            <div class="pieceLinks">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit/JustSpirit.dev"><i class="bi bi-github" title="GitHub"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://JustSpirit.dev"><i class="bi bi-globe2" title="Website"></i></a>
+            </div>
+            <p class="pieceDates">Oct 28th 2023 > Present</p>
+            <hr class="pieceDivide" style="width: 50vw;">
+        </div>
+        <div class="folioPiece" id="Repacking">
+            <img src="Assets/RepackingDesign.png" alt="Image of Repacking's initial design document" class="pieceImg">
+            <h3 class="pieceTitle">Repacking - Ludum Dare 54</h3>
+            <div class="pieceText">Repacking is an important game jam to me, as it's the first one I entered with someone who is also interested in pursuing games and not just someone I pulled into doing it with me, <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-luke-robinson-8b655928b/">Shane</a>. It's important for other reasons as well however, such as being my first game jam since entering college and learning Unreal Engine 5, and it was the first one that has any level of <em>presentability</em> to it. That being said, there isn't much to present, as we ended up backing out of the competition upon realising we wouldn't be able to complete our game in the designated time or to the standard we wanted to aim for. It was key in helping us realise where our flaws were, ones we may never have encountered by never doing any work outside of college.<br><br> The game itself centred around the player, whose job it was to pack boxes. At the start of the game, the player would be shown all the items they had to pack and would select the number and size of the boxes they would need to pack all the items. By doing so, the player would limit their space (adhering to the theme of <strong>limited space</strong>) and would be penalised for any remaining items that they were unable to pack.</div>
+            <h3 class="pieceCata">
+                <i class="bi bi-code-slash" title="I did programming on this project"></i>
+                <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
+                <i class="bi bi-gear-fill" style="opacity: 25%;"></i>
+            </h3>
+            <div class="pieceLinks">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit/LDJam54"><i class="bi bi-github" title="GitHub"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="/Assets/RepackingDesign.png"><i class="bi bi-image-fill" title="Image"></i></a>
+            </div>
+            <p class="pieceDates">Sep 30th 2023 > Oct 2nd 2023</p>
+            <hr class="pieceDivide" style="width: 50vw;">
+        </div>
+        <div class="folioPiece" id="HighNoon">
+            <img src="Assets/HighNoonTHUMB.jpg" alt="Image of the High Noon map" class="pieceImg">
+            <h3 class="pieceTitle">High Noon</h3>
+            <div class="pieceText">High Noon was the accumulation of one of the final assignments we got during our first year of college. We were paired up into teams of three or four, given a few pitches, and just had to run with them. Alongside <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-luke-robinson-8b655928b/">Shane</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/elliott-websell-64489628a/">Elliott</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isaac-nelson-a3595a28b/">Isaac</a>, I learned what it truly meant to plan a game, an experience that continues to assist me to this day.<br><br>In all honesty, I would happily talk anyone's ear off about the entire experience surrounding High Noon. Instead, you can find my final evaluation of the assignment <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Y00_CQV6ZKAHFqCzwu20-itq1xMP3rl9/view?usp=sharing">here</a>, as well as all the files, presentations, and documents we created below.</div>
+            <h3 class="pieceCata">
+                <i class="bi bi-code-slash" style="opacity: 25%;"></i>
+                <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
+                <i class="bi bi-gear-fill" title="I did production on this project"></i>
+            </h3>
+            <div class="pieceLinks">
+                <a target="_blank" rel="noopener noreferrer" href="https://trello.com/b/GMMFYpZQ"><i class="bi bi-trello" title="Trello"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1CkTh2FnJ7WZI5N11FSmaj1rkD8RzwW6h?usp=sharing"><i class="bi bi-archive-fill" title="Files"></i></a>
+            </div>
+            <p class="pieceDates">Mar 22th 2023 > May 25th 2023</p>
+            <hr class="pieceDivide" style="width: 50vw;">
+        </div>
+        <div class="folioPiece" id="NCLCC">
+            <img src="Assets/NCLCCTHUMB.png" alt="Image of the front page of the Newcastle College Christmas Card 2022 website" class="pieceImg">
+            <h3 class="pieceTitle">Newcastle College's Christmas Card Catalog 2022</h3>
+            <div class="pieceText">Early into my first year of college, me and five other students got together in order to create a website for the annual Christmas card competition hosted by Newcastle College. In this, I took charge and led the group, assigning roles and tasks that suited each individual, as well as coding the site along with three others.</div>
+            <h3 class="pieceCata">
+                <i class="bi bi-code-slash" title="I did programming on this project"></i>
+                <i class="bi bi-file-earmark-text-fill" style="opacity: 25%;"></i>
+                <i class="bi bi-gear-fill" title="I did production on this project"></i>
+            </h3>
+            <div class="pieceLinks">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit/ncl-christmas-cards"><i class="bi bi-github" title="GitHub"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://imjustspirit.github.io/ncl-christmas-cards/index.html"><i class="bi bi-globe2" title="Website"></i></a>
+            </div>
+            <p class="pieceDates">Nov 28th 2022 > Dec 17th 2022</p>
+            <hr class="pieceDivide" style="width: 50vw;">
+        </div>
+        <div class="folioPiece" id="RLBCSA">
+            <img src="Assets/RLBCSATHUMB.png" alt="No Relevent Image" class="pieceImg">
+            <h3 class="pieceTitle">Rocket League Battle Cards Stream Assistant</h3>
+            <div class="pieceText">I'm still genuinely surprised at the quality of my first ever website, and although there are many improvements that could be made (such as using a CSS and JavaScript file instead of doing all of it in HTML), I'm still pretty happy with it. Not only was it my first foray into website development, but it's likely the first project I ever finished. Made as an easy way to run and display a card game created by a streamer friend of mine, it's a great piece to show how far I've come in a relatively short amount of time.</div>
+            <h3 class="pieceCata">
+                <i class="bi bi-code-slash" title="I did programming on this project"></i>
+                <i class="bi bi-file-earmark-text-fill" style="opacity: 25%;"></i>
+                <i class="bi bi-gear-fill" style="opacity: 25%;"></i>
+            </h3>
+            <div class="pieceLinks">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit/RLBCSA"><i class="bi bi-github" title="GitHub"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://imjustspirit.github.io/RLBCSA/"><i class="bi bi-globe2" title="Website"></i></a>
+            </div>
+            <p class="pieceDates">Jan 21st 2021 > Apr 3rd 2021</p>
+            <hr class="pieceDivide" style="width: 50vw;">
+        </div>
+        <div class="folioSelect" style="margin: 0;">
+            <button type="button" style="border-bottom: 0px;" onclick="folioAll()" class="all" id="all">All Work</button>
+            <button type="button" style="border-bottom: 0px;" onclick="folioProg()" class="prog" id="prog">Programming</button>
+            <button type="button" style="border-bottom: 0px;" onclick="folioDes()" class="des" id="des">Design</button>
+            <button type="button" style="border-bottom: 0px;" onclick="folioProd()" class="prod" id="prod">Production</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- 
+
+These are just here for easy access, I should remove them or at least move them but they're perfectly fine here.
+
+<div class="folioPiece" id="">
+    <img src="" alt="No Relevent Image" class="pieceImg">
+    <h3 class="pieceTitle"></h3>
+    <div class="pieceText"></div>
+    <h3 class="pieceCata">
+        <i class="bi bi-code-slash" title="I did programming on this project"></i>
+        <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
+        <i class="bi bi-gear-fill" title="I did production on this project"></i>
+    </h3>
+    <div class="pieceLinks">
+        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-trello" title="Trello"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-github" title="GitHub"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-archive-fill" title="Files"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-image-fill" title="Image"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-globe2" title="Website"></i></a>
+    </div>
+    <p class="pieceDates"></p>
+    <hr class="pieceDivide" style="width: 50vw;">
+</div>
+
+<a target="_blank" rel="noopener noreferrer" href=""></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit">GitHub</a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jackcpetty/">LinkedIn</a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-luke-robinson-8b655928b/">Shane</a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ellie-jane-gregory-581583289/">Ellie</a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sam-clark-72b803288/">Sam</a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thomas-cross-589527288/">Thomas</a>
+
+-->
