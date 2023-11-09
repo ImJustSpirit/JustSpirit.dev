@@ -130,7 +130,6 @@ button.prod{
 .folioPiece{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr auto;
-    grid-template-rows: 100% 1fr 100% 100%;
     padding: 1vw 15vw 0vw;
 }
 
