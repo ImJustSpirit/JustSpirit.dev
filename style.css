@@ -244,7 +244,7 @@ div.cover{
 }
 /*Section End*/
 
-/*====={Media Querie For Small Screens}=====*/
+/*====={Media Query For Small Screens}=====*/
 @media only screen and (max-width: 900px) {
     .warning{display: block;}
 }
