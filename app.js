@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 })
 
 function folioAll() {
-    document.getElementById('Babel').style.display = "grid";
     document.getElementById('JS.dev').style.display = "grid";
     document.getElementById('Repacking').style.display = "grid";
     document.getElementById('HighNoon').style.display = "grid";
@@ -16,7 +15,6 @@ function folioAll() {
 }
 
 function folioProg() {
-    document.getElementById('Babel').style.display = "grid";
     document.getElementById('JS.dev').style.display = "grid";
     document.getElementById('Repacking').style.display = "grid";
     document.getElementById('HighNoon').style.display = "none";
@@ -25,7 +23,6 @@ function folioProg() {
 }
 
 function folioDes() {
-    document.getElementById('Babel').style.display = "grid";
     document.getElementById('JS.dev').style.display = "none";
     document.getElementById('Repacking').style.display = "grid";
     document.getElementById('HighNoon').style.display = "grid";
@@ -34,7 +31,6 @@ function folioDes() {
 }
 
 function folioProd() {
-    document.getElementById('Babel').style.display = "grid";
     document.getElementById('JS.dev').style.display = "none";
     document.getElementById('Repacking').style.display = "none";
     document.getElementById('HighNoon').style.display = "grid";
