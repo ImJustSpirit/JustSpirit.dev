@@ -11,7 +11,7 @@
 
 body{
     padding: 5vh 10vw;
-    font-size: medium;
+    font-size: large;
     min-height: 100vh;
     background-color: var(--primary);
     color: var(--text);
@@ -28,7 +28,7 @@ hr{
     width: 65vw;
     margin: auto;
     border-color: var(--secondary);
-    border-width: 1px;
+    border-width: px;
     border-style: solid;
 }
 
@@ -69,32 +69,37 @@ a{
     color: var(--secondary);
 }
 
-.warning{
-    display: none;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding: 1vw;
-    margin-bottom: 1vh;
-    font-size: large;
-}
-
-/*====={Page Select}=====*/
+/*====={Navigation}=====*/
 .pageSelect{
     margin-top: 5vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
     justify-content: center;
     align-items: flex-end;
 }
 
-button.blog{
+button.learn{
+    grid-column: 1;
+    grid-row: 1 / span 2;
     border-width: 2px 0px 2px 2px;
+}
+
+button.extras{
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    border-width: 2px 2px 2px 0px;
     cursor: not-allowed;
 }
 
-button.reviews{
-    border-width: 2px 2px 2px 0px;
-    cursor: not-allowed;
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links > a{
+    font-size: x-large;
 }
 
 .pageSelect > hr{
@@ -108,28 +113,10 @@ button.reviews{
     margin-top: 3vh;
 }
 
-.folioSelect{
-    margin-top: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button.all{
-    border-width: 0px 1px 2px 0px;
-}
-
-button.prog, button.des{
-    border-width: 0px 1px 2px 1px;
-}
-
-button.prod{
-    border-width: 0px 0px 2px 1px
-}
-
 .folioPiece{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr auto;
+    grid-template-columns: 16vw 2fr 2fr 1fr;
+    grid-template-rows: min-content auto min-content min-content;
     padding: 1vw 15vw 0vw;
 }
 
@@ -186,8 +173,8 @@ i:active{
     color: var(--secondary);
 }
 
-.pieceCata > i, .pieceCata > i:active{
-    cursor:help;
+.pieceCata > i{
+    cursor: help;
     color: var(--text);
 }
 
@@ -245,7 +232,23 @@ div.cover{
 /*Section End*/
 
 /*====={Media Query For Small Screens}=====*/
+@media only screen and (max-width: 1200px) {
+    body{padding: 3vh 5vw;}
+    .about{margin: 2vh 10vw 0vh;}
+}
+
 @media only screen and (max-width: 900px) {
-    .warning{display: block;}
+    body{padding: 1vh 1vw; font-size: medium;}
+    .about{margin: 1vh 5vw 0vh;}
+    button{font-size: medium;}
+    .links > a{font-size: larger;}
+    .folioPiece{grid-template-columns: 2fr 2fr 1fr; grid-template-rows: min-content min-content auto min-content min-content;}
+    .pieceImg{grid-column: 1 / span 3; grid-row: 1; width: 100%; margin: 1vh 0;}
+    .pieceTitle{grid-column: 1 / span 2; grid-row: 2;}
+    .pieceCata{grid-column: 3; grid-row: 2;}
+    .pieceText{grid-column: 1 / span 3; grid-row: 3;}
+    .pieceLinks{grid-column: 1; grid-row: 4;}
+    .pieceDates{ grid-column: 2 / span 2; grid-row: 4;}
+    .pieceDivide{grid-column: 1 / span 3; grid-row: 5;}
 }
 /*Section End*/
