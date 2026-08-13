@@ -6,152 +6,58 @@
     <title>JustSpirit.dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share+Tech&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="splash">
-        <div class="cover"></div>
-        <p class="fade-in">JustSpirit.dev</p>
-    </div>
-    <div class="theme-switch-wrapper">
-        <input id="checkbox" type="checkbox"/>
-        <label class="switch" for="checkbox">
-            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
-                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
-            </svg>
-        </label>        
-    </div>
-    <h1>JustSpirit.dev</h1>
-    <div class="about">
-        <p>Hey, I'm Jack, and this is my website (although that's pretty obvious). I'm currently a <strong>Games Programming</strong> student studying at <strong>Teeside University</strong> hailing from <strong>Newcastle.</strong></p>
-        <br>
-        <p>Games in general have been a longtime love of mine, but while I <em>do</em> love the creative side (bar anything artistic; I just don't have the eye for it), coding has been my true calling for as long as I can remember. I've spent time learning web languages such as <strong>HTML</strong> and <strong>CSS</strong>, while my latter school years were dedicated to <strong>Python</strong>. I'm currently in the process of teaching myself <strong>Unity</strong> with <strong>C#</strong> and learning <strong>C++</strong> in University.</p>
-        <br>
-        <p>Other than games, I like reading all sorts such as manga, light, web, and normal novels. I <em>do</em> like going for walks, even if I don't go on them as often as I should. I stream multiple times a week playing a variety of games.</p>
-        <br>
-        <p>This website primarily serves as a place for my portfolio, where I can show off all the work I am proud of completing, or at least starting on, either solo or with friends.</p>
-        <br>
-        <p>I host basically everything I do over on <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit">GitHub</a>, and if you ever want to reach out to me, you can do so through <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jackcpetty/">LinkedIn</a>.</p>
-    </div>
-    <div class="pageSelect">
-        <button type="button" class="left" title="A page with useful information on learning game development and adjacent topics." onclick="window.location.href='https://learn.JustSpirit.dev/';">Learn</button>
-        <div class="links">
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit"><i class="bi bi-github" title="GitHub"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jackcpetty/"><i class="bi bi-linkedin" title="LinkedIn"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://justspirit.itch.io/"><i class="bi bi-shop-window" title="itch.io"></i></a>
+    <div class="page">
+        <div class="online"><h6>Online</h6></div>
+        <div class="clock"><h6>Clock</h6></div>
+        <div class="title">
+            <h1>JustSpirit.dev</h1>
+            <h2>The world may have ended, but the internet is still kicking.</h2>
         </div>
-        <hr>
-        <button type="button" class="extras" title="Sorry, the extras page isn't ready yet."disabled>Extras</button>
-    </div>
-    <br>
-    <div class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="folioPiece" id="Tutorial">
-            <img src="Assets/TutorialTHUMB.png" alt="YouTube Thumbnail" class="pieceImg">
-            <h3 class="pieceTitle">Unreal Engine Platformer Tutorial</h3>
-            <div class="pieceText">Early in 2024, my class had a practical exam creeping up on us, so I put together this tutorial video which provided a basic rundown of common mechanics which people could use as an aid for their own independent learning.</div>
-            <h3 class="pieceCata">
-                <i class="bi bi-code-slash" title="I did programming on this project"></i>
-                <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
-                <i class="bi bi-gear-fill" title="I did production on this project"></i>
-            </h3>
-            <div class="pieceLinks">
-                <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/eC90YEohSpU?si=aBOaPamEKpePrWmm"><i class="bi bi-youtube" title="YouTube"></i></a>
-            </div>
-            <p class="pieceDates">March 7th 2024</p>
-            <hr class="pieceDivide" style="width: 50vw;">
-        </div>
-        <div class="folioPiece" id="DungeonMerchant">
-            <img src="Assets/DungeonMerchantTHUMB.png" alt="A double page spread containing information about the game Dungeon Merchant." class="pieceImg">
-            <h3 class="pieceTitle">Dungeon Merchant</h3>
-            <div class="pieceText">Dungeon Merchant was originally created as part of a college assignment in the run up to an exam. It was to test and reinforce the ability to come up with a game concept aligned with a client's request. Later in the year, I compiled a lot of the main components of the design into a double page spread.</div>
-            <h3 class="pieceCata">
-                <i class="bi bi-code-slash" style="opacity: 25%; cursor: default;"></i>
-                <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
-                <i class="bi bi-gear-fill" style="opacity: 25%; cursor: default;"></i>
-            </h3>
-            <div class="pieceLinks">
-                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/16je2Yq28BuVuGBTkU81Fy8C8mvP94qB6?usp=sharing"><i class="bi bi-archive-fill" title="Files"></i></a>
-                <a target="_blank" rel="noopener noreferrer" href="Assets/DungeonMerchantTHUMB.png"><i class="bi bi-image-fill" title="Image"></i></a>
-            </div>
-            <p class="pieceDates">Nov 20th 2023 > Dec 23rd 2023</p>
-            <hr class="pieceDivide" style="width: 50vw;">
-        </div>
-        <div class="folioPiece" id="JS.dev">
-            <img src="Assets/JustSpiritdevTHUMB.png" alt="Image of this website's splashscreen" class="pieceImg">
-            <h3 class="pieceTitle">JustSpirit.dev</h3>
-            <div class="pieceText">JustSpirit.dev is the very website you are reading this on. I always wanted to do a website portfolio/cv instead of some <em>boring</em> pdf. However, as I went through all the work of setting up this website (including squashing some annoying and confusing bugs), I don't plan to limit myself to a portfolio.</div>
-            <h3 class="pieceCata">
-                <i class="bi bi-code-slash" title="I did programming on this project"></i>
-                <i class="bi bi-file-earmark-text-fill"  style="opacity: 25%; cursor: default;"></i>
-                <i class="bi bi-gear-fill"  style="opacity: 25%; cursor: default;"></i>
-            </h3>
-            <div class="pieceLinks">
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit/JustSpirit.dev"><i class="bi bi-github" title="GitHub"></i></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://JustSpirit.dev"><i class="bi bi-globe2" title="Website"></i></a>
-            </div>
-            <p class="pieceDates">Oct 28th 2023 > Present</p>
-            <hr class="pieceDivide" style="width: 50vw;">
-        </div>
-        <div class="folioPiece" id="HighNoon">
-            <img src="Assets/HighNoonTHUMB.jpg" alt="Image of the High Noon map" class="pieceImg">
-            <h3 class="pieceTitle">High Noon</h3>
-            <div class="pieceText">High Noon was the accumulation of one of the final assignments we got during our first year of college. We were paired up into teams of three or four, given a few pitches, and just had to run with them. Alongside <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-luke-robinson-8b655928b/">Taylor</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/elliott-websell-64489628a/">Elliott</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isaac-nelson-a3595a28b/">Isaac</a>, I learned what it truly meant to plan a game, an experience that continues to assist me to this day.<br><br>In all honesty, I would happily talk anyone's ear off about the entire experience surrounding High Noon. Instead, you can find my final evaluation of the assignment <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Y00_CQV6ZKAHFqCzwu20-itq1xMP3rl9/view?usp=sharing">here</a>, as well as all the files, presentations, and documents we created below.</div>
-            <h3 class="pieceCata">
-                <i class="bi bi-code-slash"  style="opacity: 25%; cursor: default;"></i>
-                <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
-                <i class="bi bi-gear-fill" title="I did production on this project"></i>
-            </h3>
-            <div class="pieceLinks">
-                <a target="_blank" rel="noopener noreferrer" href="https://trello.com/b/GMMFYpZQ"><i class="bi bi-trello" title="Trello"></i></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1CkTh2FnJ7WZI5N11FSmaj1rkD8RzwW6h?usp=sharing"><i class="bi bi-archive-fill" title="Files"></i></a>
-            </div>
-            <p class="pieceDates">Mar 22th 2023 > May 25th 2023</p>
-            <hr class="pieceDivide" style="width: 50vw;">
+        <div class="me"><img src="assets/me.jpg" alt=""></div>
+        <div class="about">
+            <p>Hey! Nice to meet you, ImJustSpirit, also known as JustSpirit, but you can call me just Spirit. I'm a 20 year old game developer focusing on programming and production.</p>
         </div>
     </div>
-    <br>
-    <a target="_blank" rel="noopener noreferrer" href="JackCPetty-CV.pdf"><h1>Download CV</h1></a>
-    <a target="_blank" rel="noopener noreferrer" href="JackCPetty-PlainCV.pdf" style="color: var(--text);"><h5 style="text-align: center;">(Plaintext Version)</h5></a>
     <script src="app.js"></script>
 </body>
 </html>
 
-<!-- 
+<!--
+Home
+Blog
+Interests
+Work
+Contact
+Buttons
+Navlink
+Music
+Photo
+Background
 
-These are just here for easy access, I should remove them or at least move them but they're perfectly fine here.
-
-<div class="folioPiece" id="">
-    <img src="" alt="No Relevant Image" class="pieceImg">
-    <h3 class="pieceTitle"></h3>
-    <div class="pieceText"></div>
-    <h3 class="pieceCata">
-        <i class="bi bi-code-slash" title="I did programming on this project"></i>
-        <i class="bi bi-file-earmark-text-fill" title="I did design on this project"></i>
-        <i class="bi bi-gear-fill" title="I did production on this project"></i>
-    </h3>
-    <div class="pieceLinks">
-        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-trello" title="Trello"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-github" title="GitHub"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-archive-fill" title="Files"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-image-fill" title="Image"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-globe2" title="Website"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-youtube" title="YouTube"></i></a>
-    </div>
-    <p class="pieceDates"></p>
-    <hr class="pieceDivide" style="width: 50vw;">
-</div>
-
-<a target="_blank" rel="noopener noreferrer" href=""></a>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/ImJustSpirit">GitHub</a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jackcpetty/">LinkedIn</a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-luke-robinson-8b655928b/">Taylor</a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ellie-jane-gregory-581583289/">Ellie</a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sam-clark-72b803288/">Sam</a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thomas-cross-589527288/">Thomas</a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kathryn-hawes-07b6a8288/">Kathryn</a>
-
+<a href="https://dimden.dev/" target="_blank"><img src="https://dimden.dev/services/images/88x31.gif" loading="lazy" alt=""></a>
+<a href="https://melankorin.net" target="_blank"><img src="https://melankorin.net/assets/img/buttons/button-2.gif" loading="lazy" alt=""></a>
+<a href="https://dinpixels.neocities.org/" target="_blank"><img src="https://dinpixels.neocities.org/src/img/buttons/dinbtn0.gif" loading="lazy" alt=""></a>
+<a href="https://yesterweb.org/no-to-web3/" target="_blank"><img src="https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif" loading="lazy" alt=""></a>
+<a href="https://inkposting.neocities.org/" target="_blank"><img src="https://inkposting.neocities.org/inkposting.png" loading="lazy" alt=""></a>
+<a href="https://oenuzlocke.cfw.me/" target="_blank"><img src="https://oenuzlocke.cfw.me/files/affiliates/me.png" loading="lazy" alt=""></a>
+<a href="https://milkyway.moe/" target="_blank"><img src="https://milkyway.moe/milkybuttons/MiLKOS.gif" loading="lazy" alt=""></a>
+<a href="https://web.archive.org/web/20211205022959fw_/https://ass.esoda.ga/#" target="_blank"><img src="https://milkyway.moe/buttons/season3/amdone.gif" loading="lazy" alt=""></a>
+<a href="https://unicodeangel.neocities.org" target="_blank"><img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton3.gif" loading="lazy" alt=""></a>
+<a href="https://zoeyonline.me/" target="_blank"><img src="https://zoeyonline.me/assets/images/button.gif" loading="lazy" alt=""></a>
+<a href="https://seized.fyi/" target="_blank"><img src="https://seized.fyi/seized.gif" loading="lazy" alt=""></a>
+<a href="https://lina.sh/" target="_blank"><img src="https://lina.sh/assets/88x31/lina.gif" loading="lazy" alt=""></a>
+<a href="https://slonk.ing/" target="_blank"><img src="https://slonk.ing/img/88x31.webp" loading="lazy" alt=""></a>
+<a href="https://auxim.gay"><img src="https://auxim.gay/img/webring/auxim.png" loading="lazy" alt="auxim.gay 88x31 button"/></a>
+<a href="https://yui.dev/" target="_blank"><img src="https://yui.dev/static/88x31/yuidev.png" loading="lazy" alt=""></a>
+<a href="https://vale.rocks/" target="_blank"><img src="https://vale.rocks/assets/buttons/valerocks_button.avif" loading="lazy" alt=""></a>
+<a href="https://tofokyo.com" target="_blank"><img src="https://tofokyo.com/images/banners/tofokyobutton.gif" loading="lazy" alt=""></a>
+<a href="https://theabsoluterealm.com" target="_blank"><img src="assets/absolute-realm.gif" loading="lazy" alt=""></a>
+<a href="https://gikaayumi.nekoweb.org" target="_blank"><img src="https://gikaayumi.nekoweb.org/imagens/buttons/88x31ButtonGikaAyumi3.gif" loading="lazy" alt=""></a>
+<a href="https://fyz.sh/" target="_blank"><img src="https://api.fyz.sh/button/88x31?v=f9950d3" loading="lazy" alt="fyz"></a>
+<a href="https://trafficlunar.net/" target="_blank"><img src="https://trafficlunar.net/88x31.gif" loading="lazy" alt="trafficlunar"/></a>
 -->
