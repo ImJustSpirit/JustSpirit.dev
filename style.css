@@ -69,6 +69,15 @@ a{
     color: var(--secondary);
 }
 
+.notice {
+    padding: 2vw;
+    text-align: center;
+    background: red;
+    color: var(--primary);
+    outline-offset: 2px;
+    outline: var(--text) solid;
+}
+
 /*====={Navigation}=====*/
 .pageSelect{
     margin-top: 5vh;
@@ -83,6 +92,7 @@ button.learn{
     grid-column: 1;
     grid-row: 1 / span 2;
     border-width: 2px 0px 2px 2px;
+    cursor: not-allowed;
 }
 
 button.extras{
