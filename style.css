@@ -24,7 +24,7 @@
 
 body {
     background-color: var(--background);
-    padding: 2vh 25vw;
+    padding: 2vh 30vw;
 }
 
 h1 {
@@ -44,6 +44,29 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: var(--text);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: right;
+}
+
 h6 {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
@@ -51,18 +74,15 @@ h6 {
     font-size: 0.75rem;
 }
 
-.page {
+/*====={Header}=====*/
+.header {
     background-color: var(--background);
     display: grid;
     border: double var(--gray); 
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
         "online clock clock"
         "title title title"
-        "me about about"
-        ". . ."
-        ". . ."
-        ". . ."
     ;
 }
 
@@ -79,22 +99,28 @@ h6 {
 
 .title {
     grid-area: title;
-    padding: 0 1vw;
+    padding: 1vh 1vw;
+}
+/*Section End*/
+
+/*====={Page}=====*/
+.page {
+    display: grid;
+    margin-top: 2vh;
+    ;
 }
 
-.me {
-    grid-area: me;
-    margin: 3vh 0 1vh 1vw;
+.navigation button {
+    background-color: var(--background);
     border: double var(--gray);
+    border-width: 3px 3px 0;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
 }
 
-.me img {
-    width: 100%;
+.content {
+    background-color: var(--background);
+    border: double var(--gray);
+    border-width: 0 3px 3px;
 }
-
-.about {
-    grid-area: about;
-    margin: 3vh 1vw 1vh 0;
-    padding: 1vh;
-    border: double var(--gray); 
-}
+/*Section End*/
