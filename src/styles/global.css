@@ -27,6 +27,7 @@ body {
     padding: 2vh 30vw;
 }
 
+/*====={Text}=====*/
 h1 {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
@@ -78,6 +79,7 @@ h6 {
 p {
     font-size: 1.2rem;
 }
+/*Section End*/
 
 /*====={Header}=====*/
 .header {
@@ -150,7 +152,7 @@ p {
 .portfolio {
     display: grid;
     padding: 1rem;
-    grid-template-columns: auto 3fr auto;
+    grid-template-columns: auto 3fr min-content;
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "cover project date"
@@ -181,13 +183,15 @@ p {
 
 .desc {
     grid-area: desc;
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 }
 
 .skills {
     grid-area: skills;
     border-left: solid var(--gray) 2px;
+    margin-top: 1rem;
     padding-left: 1rem;
     text-decoration: dotted;
+    overflow-wrap: anywhere;
 }
 /*Section End*/
