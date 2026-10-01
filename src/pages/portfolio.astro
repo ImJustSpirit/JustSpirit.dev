@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import PortfolioLayout from '../layouts/PortfolioLayout.astro';
+import Skills from '../components/Skills.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JustSpirit.dev</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<Header />
+		<div class="page">
+            <Navigation />
+			<div class="content">
+				<h1>Portfolio</h1>
+                <p>Yap about portfolio shiz</p>
+			</div>
+            <PortfolioLayout project="JustSpirit.dev" date="" image="" alt="">
+                <p class="desc"></p>
+                <div class="skills">
+                </div>
+            </PortfolioLayout>
+            <PortfolioLayout project="Ouroboros Engine" date="" image="" alt="">
+                <p class="desc"></p>
+                <div class="skills">
+                </div>
+            </PortfolioLayout>
+            <PortfolioLayout project="Dungeon Merchant" date="" image="" alt="">
+                <p class="desc"></p>
+                <div class="skills">
+                </div>
+            </PortfolioLayout>
+		</div>
+		<Footer />
+	</body>
+</html>

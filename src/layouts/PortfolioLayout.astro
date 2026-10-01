@@ -1,0 +1,14 @@
+---
+import '../styles/global.css';
+const {project} = Astro.props;
+const {date} = Astro.props;
+const {image} = Astro.props;
+const {alt} = Astro.props;
+---
+
+<div class="content portfolio">
+    <img src={image} alt={alt} class="cover">
+    <h1 class="project">{project}</h1>
+    <h4 class="date">{date}</h4>
+    <slot />
+</div>

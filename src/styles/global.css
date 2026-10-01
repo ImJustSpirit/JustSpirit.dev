@@ -55,8 +55,10 @@ h3 {
 h4 {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
+    font-style: italic;
     color: var(--orange);
     font-size: 1.4rem;
+    text-align: right;
 }
 
 h5 {
@@ -64,7 +66,6 @@ h5 {
     font-weight: 300;
     font-style: italic;
     font-size: 1rem;
-    text-align: right;
 }
 
 h6 {
@@ -74,11 +75,15 @@ h6 {
     font-size: 0.75rem;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 /*====={Header}=====*/
 .header {
     background-color: var(--background);
     display: grid;
-    border: double var(--gray); 
+    border: double var(--gray);
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
         "online clock clock"
@@ -90,6 +95,7 @@ h6 {
     grid-area: online;
     border-bottom: double var(--gray); 
     border-right: 2px dashed var(--gray);
+    text-align: center;
 }
 
 .clock {
@@ -103,24 +109,85 @@ h6 {
 }
 /*Section End*/
 
+/*====={Footer}=====*/
+.footer {
+    background-color: var(--background);
+    border: double var(--gray); 
+    padding: 1rem 2rem;
+    text-align: center;
+}
+/*Section End*/
+
 /*====={Page}=====*/
 .page {
     display: grid;
-    margin-top: 2vh;
-    ;
 }
 
 .navigation button {
     background-color: var(--background);
     border: double var(--gray);
     border-width: 3px 3px 0;
+    margin-top: 4vh;
+    margin-right: 0.4rem;
     padding: 0.3rem 0.7rem;
     cursor: pointer;
+}
+
+.navigation button:hover {
+    border-color: var(--aqua);
 }
 
 .content {
     background-color: var(--background);
     border: double var(--gray);
-    border-width: 0 3px 3px;
+    border-width: 3px 3px 3px;
+    padding: 0 2rem 1rem;
+    margin-bottom: 4vh;
+}
+/*Section End*/
+
+/*====={Portfolio}=====*/
+.portfolio {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: auto 3fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "cover project date"
+        "cover desc skills"
+    ;
+}
+
+.portfolio:hover {
+    border-color: var(--aqua);
+}
+
+.cover {
+    grid-area: cover;
+    border: double var(--gray);
+    width: 8vw;
+}
+
+.project {
+    grid-area: project;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.date {
+    grid-area: date;
+    margin: auto 0 auto 1rem;
+}
+
+.desc {
+    grid-area: desc;
+    padding: 1rem;
+}
+
+.skills {
+    grid-area: skills;
+    border-left: solid var(--gray) 2px;
+    padding-left: 1rem;
+    text-decoration: dotted;
 }
 /*Section End*/
