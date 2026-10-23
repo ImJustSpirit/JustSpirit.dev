@@ -6,9 +6,16 @@ const {image} = Astro.props;
 const {alt} = Astro.props;
 ---
 
-<div class="content portfolio">
-    <img src={image} alt={alt} class="cover">
-    <h1 class="project">{project}</h1>
-    <h4 class="date">{date}</h4>
-    <slot />
-</div>
+<details name="piece">
+    <summary>
+        <div class="content portfolio" onclick="reveal()">
+            <img src={image} alt={alt} class="cover">
+            <h1 class="project">{project}</h1>
+            <h4 class="date">{date}</h4>
+            <slot />
+        </div>
+    </summary>
+    <div class="content expand">
+        <slot name="expand" />
+    </div>
+</details>

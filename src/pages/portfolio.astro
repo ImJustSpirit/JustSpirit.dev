@@ -1,76 +1,86 @@
 ---
 import '../styles/global.css';
+import Head from '../layouts/Head.astro'
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import PortfolioLayout from '../layouts/PortfolioLayout.astro';
-import Skills from '../components/Skills.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>JustSpirit.dev</title>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	</head>
+	<Head title="Portfolio"/>
 	<body>
 		<Header />
 		<div class="page">
             <Navigation />
-			<div class="content">
+			<div class="content" style="margin-bottom: 0;">
 				<h1>Portfolio</h1>
                 <p>Hello, I'm Jack, a games programmer from the North-East of England.</p>
 			</div>
-            <PortfolioLayout project="Inventory System" date=">.Present" image="" alt="">
+            <PortfolioLayout project="Inventory System" date=">.Present" image="InventorySystem.png" alt="">
                 <p class="desc"></p>
                 <div class="skills">
 					UE 5.7.4<br>
 					C++<br>
 					Plugin Dev<br>
                 </div>
+                <div slot="expand">
+                    WOW THIS IS A DIV WHICH I NEED TO MAKE EXPAND SOMEHOW. IM SURE THAT WILL BE FUN TO FIGURE OUT WOOoooOoOoOoOoOoOoOoOoOo
+                </div>
             </PortfolioLayout>
-            <PortfolioLayout project="JustSpirit.dev" date="02/10/'26" image="" alt="">
+            <PortfolioLayout project="JustSpirit.dev" date="02/10/'26" image="JSDev.png" alt="">
                 <p class="desc">The very website you are reading this on. Planned to include all sorts such as: a gallery; fiction writing; blog posts; and a forum...?</p>
                 <div class="skills">
 					Astro<br>
 					HTML<br>
 					CSS<br>
                 </div>
+                <div slot="expand">
+                    JustSpirit.dev is my custom website built to house whatever I wish. The website has been made using Astro, hosted on GitHub, protected by Cloudflare with the domain provided via Hostinger. It's constantly expanding as I work on adding new things.
+                </div>
             </PortfolioLayout>
-            <PortfolioLayout project="Skill Creation System" date="06/01/'26" image="" alt="">
+            <PortfolioLayout project="Skill Creation System" date="06/01/'26" image="SCS.png" alt="">
                 <p class="desc"></p>
                 <div class="skills">
 					Unity '22<br>
 					C#<br>
 					Plugin Dev<br>
                 </div>
+                <div slot="expand">
+                    
+                </div>
             </PortfolioLayout>
-            <PortfolioLayout project="My Day Out :)" date="26/10/'25" image="" alt="">
+            <PortfolioLayout project="My Day Out :)" date="26/10/'25" image="MyDayOut.png" alt="">
                 <p class="desc"></p>
                 <div class="skills">
 					Team Lead<br>
 					Unity '22<br>
 					C#<br>
                 </div>
+                <div slot="expand">
+                    
+                </div>
             </PortfolioLayout>
-            <PortfolioLayout project="Ouroboros Engine" date="03/08/'25" image="" alt="">
+            <PortfolioLayout project="Ouroboros Engine" date="03/08/'25" image="OuroborosEngine.png" alt="">
                 <p class="desc"></p>
                 <div class="skills">
 					Team Lead<br>
 					Unity '22<br>
 					C#<br>
                 </div>
+                <div slot="expand">
+                    
+                </div>
             </PortfolioLayout>
-            <PortfolioLayout project="Dungeon Merchant" date="11/12/'23" image="" alt="">
+            <PortfolioLayout project="Dungeon Merchant" date="11/12/'23" image="DungeonMerchant.png" alt="">
                 <p class="desc"></p>
                 <div class="skills">
 					Game Design<br>
 					Level Design<br>
 					World Design<br>
+                </div>
+                <div slot="expand">
+                    Dungeon Merchant was a project I worked on all the way back in my college days where we had to design 
                 </div>
             </PortfolioLayout>
 		</div>

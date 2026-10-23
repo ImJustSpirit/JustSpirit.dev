@@ -22,11 +22,17 @@
     z-index: 1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background);
-    padding: 2vh 0;
+    /* padding: 2vh 0; */
+    padding: 4vh 0;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
+    /* grid-template-columns: auto min-content auto; */
     grid-template-areas:
         ". header ."
         ". page ."
@@ -40,6 +46,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 6rem;
+    /* font-size: calc(3.2rem); */
     text-align: center;
 }
 
@@ -49,6 +56,8 @@ h2 {
     font-style: italic;
     color: var(--alttext);
     font-size: 1.5rem;
+    /* font-size: calc(0.8rem); */
+    padding: 0 1.4vw;
     text-align: center;
 }
 
@@ -57,6 +66,7 @@ h3 {
     font-weight: 400;
     color: var(--text);
     font-size: 1.4rem;
+    /* font-size: calc(0.7rem); */
     text-align: center;
 }
 
@@ -66,6 +76,7 @@ h4 {
     font-style: italic;
     color: var(--orange);
     font-size: 1.4rem;
+    /* font-size: calc(0.7rem); */
     text-align: right;
 }
 
@@ -74,6 +85,7 @@ h5 {
     font-weight: 300;
     font-style: italic;
     font-size: 1rem;
+    /* font-size: calc(0.6rem); */
 }
 
 h6 {
@@ -81,10 +93,12 @@ h6 {
     font-weight: 300;
     font-style: normal;
     font-size: 0.75rem;
+    /* font-size: calc(0.375rem); */
 }
 
 p {
     font-size: 1.2rem;
+    /* font-size: calc(0.9rem); */
 }
 /*Section End*/
 
@@ -95,7 +109,7 @@ p {
     display: grid;
     width: max-content;
     border: double var(--gray);
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: auto 1fr 1fr;
     grid-template-areas:
         "online clock clock"
         "title title title"
@@ -107,6 +121,7 @@ p {
     border-bottom: double var(--gray); 
     border-right: 2px dashed var(--gray);
     text-align: center;
+    padding: 0 2vw;
 }
 
 .clock {
@@ -126,7 +141,14 @@ p {
     background-color: var(--background);
     border: double var(--gray); 
     padding: 1rem 2rem;
+    margin-top: 4vh;
+    /* padding: 1vh 2vw; */
     text-align: center;
+}
+
+.email {
+    color: var(--yellow);
+    font-weight: 600;
 }
 /*Section End*/
 
@@ -141,8 +163,11 @@ p {
     border: double var(--gray);
     border-width: 3px 3px 0;
     margin-top: 4vh;
+    /* margin-top: 2vh; */
     margin-right: 0.4rem;
+    /* margin-right: 3px; */
     padding: 0.3rem 0.7rem;
+    /* padding: 0.4vh 2vw; */
     cursor: pointer;
 }
 
@@ -155,13 +180,15 @@ p {
     border: double var(--gray);
     border-width: 3px 3px 3px;
     padding: 0 2rem 1rem;
-    margin-bottom: 4vh;
+    /* padding: 0 2vw 1.3vh; */
 }
 /*Section End*/
 
 /*====={Portfolio}=====*/
 .portfolio {
     display: grid;
+    margin-top: 4vh;
+    margin-bottom: 0;
     padding: 1rem;
     grid-template-columns: auto 3fr min-content;
     grid-template-rows: auto 1fr;
@@ -173,6 +200,7 @@ p {
 
 .portfolio:hover {
     border-color: var(--aqua);
+    cursor: pointer;
 }
 
 .cover {
@@ -203,5 +231,19 @@ p {
     margin-top: 1rem;
     padding-left: 1rem;
     text-decoration: dotted;
+}
+
+.expand {
+    margin: 0 1.2rem;
+    padding: 1rem 2rem;
+    border-top: 0;
+}
+
+.expand:hover {
+    border-color: var(--yellow);
+}
+
+::marker {
+  content: "";
 }
 /*Section End*/
